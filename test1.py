@@ -7,20 +7,11 @@ class Answer:
         self.c = z
         self.sum = result
 
-#get scalar product
-def scalar(x,y):
-    scalarProduct = 0
-    for i in range(len(x)):
-        scalarProduct += x[i]*y[i]
-    return scalarProduct
-
 def getSum(Matrix):
     sumMatrix = 0
     for row in Matrix:
         sumMatrix += sum(row)
     return sumMatrix
-
-
 
 def getBest3OrtogonalColumns(Matrix):
     answers = []
